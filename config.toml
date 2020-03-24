@@ -2,3 +2,6 @@ baseURL = "http://example.org/"
 languageCode = "ja"
 title = "tazeen's Tech Memo"
 theme = "hugo-flex"
+
+[Params]
+summaries = true

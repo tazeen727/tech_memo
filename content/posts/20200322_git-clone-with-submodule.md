@@ -7,6 +7,7 @@ tags: ["Hugo", "Git"]
 
 ブログをHugoで生成するとき、テーマをリポジトリのsubmoduleとして追加する必要がある。
 追加は以下のコマンドでできる。例として使ったのは[Hugo Flex](https://themes.gohugo.io/hugo-flex/)。
+<!--more-->
 ```bash
 git submodule add https://github.com/de-souza/hugo-flex.git themes/hugo-flex
 ```
