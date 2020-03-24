@@ -68,6 +68,10 @@ $ git clone --recurse-submodules git@github.com:tazeen727/tech_memo.git tech_mem
 
 `git submodule`についてはまだまだ理解不足。そんなに使う頻度の多い機能でもないと思うので（少なくとも個人では…）、忘れないように残しておけば今度使うときに役に立ちそう。
 
+## 2020/3/25 追記
+そういえば以前、[【改訂新版】Gitポケットリファレンス](https://www.amazon.co.jp/dp/4774185930/)を買ったことを思い出し、
+本棚から引っ張り出して探してみたら`git submodule`の解説もちゃんとあった。時間があるときに読んでみよう。
+
 ## 参考
 - [Git submodule の基礎 \- Qiita](https://qiita.com/sotarok/items/0d525e568a6088f6f6bb)
 - [Git submoduleの押さえておきたい理解ポイントのまとめ \- Qiita](https://qiita.com/kinpira/items/3309eb2e5a9a422199e9)
