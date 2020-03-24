@@ -1,7 +1,7 @@
 ---
-title: "Hugoで作ったブログのトップに要約で一覧表示する"
+title: "ブログのトップに要約を一覧表示する"
 date: 2020-03-24T12:10:42+09:00
-draft: true
+draft: false
 tags: ["Hugo",]
 ---
 
