@@ -1,17 +1,17 @@
 ---
 title: "ディレクトリのリネームでpermission deniedと表示される"
 date: 2020-03-28T09:53:55+09:00
-draft: true
-tags: ["WSL1", "Visual Studio Code"]
+draft: false
+tags: ["WSL1", "VS Code"]
 ---
 
 VS CodeでScalaプロジェクトのパッケージのリネームがしたくなったので、VS Code上でリネームしたら、右下にこんなエラーメッセージが出た。
+<!--more-->
 ```
 Error: EACCES: permission denied, rename '/home/tazeen/toy/renamedir/src/main/scala/example' -> '/home/tazeen/toy/renamedir/src/main/scala/sample'
 ```
-<!--more-->
 permission deniedってことは、ディレクトリに権限がないってこと？権限を見てみたが問題なさそう。
-```bash
+```sh
 $ pwd
 /home/tazeen/toy/renamedir/src/main/scala
 $ ls -l
@@ -21,14 +21,14 @@ drwxrwxrwx 1 tazeen tazeen 4096 Mar 28 09:50 example
 
 試しにbashからリネームできるか試すが、ダメ。
 
-```bash
+```sh
 $ mv example sample
 mv: cannot move 'example' to 'sample': Permission denied
 ```
 
 色々いじっていると、どうやら中にファイルが含まれているとリネームできないことが分かった。
 
-```bash
+```sh
 $ mv example sample
 mv: cannot move 'example' to 'sample': Permission denied
 $ ls -l example
